@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar .nav-links a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+.hero-section {
+    background: url('img/pexels-mnzoutfits-1598505.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-section .hero-content {
+    max-width: 600px;
+}
+
+.hero-section .cta-button {
+    background: #ff7f50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hero-section .cta-button:hover {
+    background: #e06a3d;
+}
+
+.shop-section, .about-section, .contact-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.shop-section h2, .about-section h2, .contact-section h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    margin: 20px 0 10px;
+}
+
+.product-item p {
+    font-size: 18px;
+    color: #555;
+}
+
+.product-item {
+    transition: transform 0.3s; /* add this line */
+  }
+  
+  .product-item:hover {
+    transform: scale(1.05); /* add this line */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* add this line */
+  }
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section form label {
+    margin-top: 10px;
+}
+
+.contact-section form input, .contact-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section form button {
+    background: #ff7f50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contact-section form button:hover {
+    background: #e06a3d;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.hero-section {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: heroAnimation 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes heroAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
